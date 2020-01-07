@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>进度管控中心</title>
+</head>
+<body>
+<div class="" id="parkBuildingCenter">
+    <!--//左侧部分-->
+    <div class="left_content_box">
+        <!--//党委班子成员-->
+        <div class="dz_park_member">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>党委班子成员</span>
+            </p>
+            <div class="dz_park_member_content dz_relative">
+                <span class="split_line split_line_top">
+                    <i class="line_light"></i>
+                </span>
+                <div class="dz_cl">
+                    <div class="member_content_box">
+                        <ul class="member_items" id="memberItems">
+                            <li class="member_item dz_pull_left">
+                                <img src="${require('../img/person_1.png')}" alt="" style="width:100%">
+                                <div>党委书记</div>
+                            </li>
+                            <li class="member_item dz_pull_left">
+                                <img src="${require('../img/person_2.png')}" alt="" style="width:100%">
+                                <div>党委副书记</div>
+                            </li>
+                            <li class="member_item dz_pull_left">
+                                <img src="${require('../img/../img/person_3.png')}" alt="" style="width:100%">
+                                <div>党委委员、纪委书记</div>
+                            </li>
+                            <li class="member_item dz_pull_left">
+                                <img src="${require('../img/../img/person_4.png')}" alt="" style="width:100%">
+                                <div>党委委员</div>
+                            </li>
+                            <li class="member_item dz_pull_left">
+                                <img src="${require('../img/../img/person_5.png')}" alt="" style="width:100%">
+                                <div>党委委员</div>
+                            </li>
+                            <li class="member_item dz_pull_left">
+                                <img src="${require('../img/../img/person_6.png')}" alt="" style="width:100%">
+                                <div>党委委员</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="split_line split_line_bottom">
+                    <i class="line_light"></i>
+                </span>
+            </div>
+        </div>
+
+        <!--//组织架构及人员分布-->
+        <div class="dz_park_organization ">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>组织架构及人员分布</span>
+            </p>
+            <div class="dz_park_organization_content dz_relative">
+                <span class="split_line split_line_top">
+                    <i class="line_light"></i>
+                </span>
+                <div class="dz_cl">
+                    <div class="dz_pull_left">
+                        <div>
+                            <div class="dz_box">
+                                <div class="dz_title">在岗职工</div>
+                                <div class="dz-content">
+                                    <b>9</b>
+                                    <b>0</b>
+                                    <b>4</b>
+                                    &nbsp;
+                                    <span>人</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dz_pull_left">
+                        <div>
+                            <div class="dz_box">
+                                <div class="dz_title">在岗党员</div>
+                                <div class="dz-content">
+                                    <b>1</b>
+                                    <b>5</b>
+                                    <b>7</b>
+                                    &nbsp;
+                                    <span>人</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dz_pull_left">
+                        <div>
+                            <div class="dz_box">
+                                <div class="dz_title">退休党员</div>
+                                <div class="dz-content">
+                                    <b>1</b>
+                                    <b>7</b>
+                                    &nbsp;
+                                    <span>人</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <span class="split_line split_line_bottom">
+                    <i class="line_light"></i>
+                </span>
+            </div>
+        </div>
+
+        <!--//党员构成-->
+        <div class="dz_framework dz_relative" >
+            <p class="left_title" >
+                <span class="title_icop"></span>
+                <span>党员构成</span>
+            </p>
+            <p class="left_title dz_left_title">
+                <span class="title_icop"></span>
+                <span>发展对象及积极分子</span>
+            </p>
+            <div class="dz_relative">
+                <div class="dz_education_title dz_pie_itle">学历构成</div>
+                <div class="dz_party_age_title dz_pie_itle">党龄构成</div>
+                <div id="educationPie" class="dz_pie_box"></div>
+                <div id="partyAgePie" class="dz_pie_box"></div>
+                <div id="moveOutPie" class="dz_pie_box" style="width: 30%;"></div>
+            </div>
+        </div>
+
+        <!--//党建新闻动态-->
+        <div class="news_box">
+            <p class="left_title">
+                <span class="title_icop">
+                </span>
+                <span>党建新闻动态</span>
+            </p>
+
+            <div class="news_pic_box">
+                <span class="split_line split_line_top">
+                    <i class="line_light"></i>
+                </span>
+                <div class="pikachoose">
+                    <ul id="pikame2" class="jcarousel-skin-pika">
+                        <li>
+                            <img  src="static/imgs/dang_1.png" alt="展示图片">
+                            <span>公司党委召开“不忘初心、牢记使命”主题教育工作部署暨第一次集中学习会</span>
+                        </li>
+                        <li>
+                            <img  src="static/imgs/dang_2.png" alt="展示图片">
+                            <span>公司党委召开“不忘初心、牢记使命”主题教育集中学习研讨会</span>
+                        </li>
+                        <li>
+                            <img  src="static/imgs/dang_3.png" alt="展示图片">
+                            <span>党委书记集中约谈班子成员及中层干部</span>
+                        </li>
+                        <li>
+                            <img  src="static/imgs/dang_4.png" alt="展示图片">
+                            <span>党委书记蒋荣超调研渝豪仕公司</span>
+                        </li>
+                        <li>
+                            <img  src="static/imgs/dang_5.jpg" alt="展示图片">
+                            <span>梳旗帜立榜样！渝高集团党员先锋岗创建一周年亮成果</span>
+                        </li>
+                        <li>
+                            <img  src="static/imgs/dang_6.jpg" alt="展示图片">
+                            <span>渝高公司党委开展系列活动庆祝建党98周年</span>
+                        </li>
+                        <!--<li>
+                            <img src="http://www.yugao.com.cn/Uploads/Picture/2019-07-08/5d23021541c6c.jpg" alt="展示图片">
+                            <span>渝高集团召开2018年股东大会</span>
+                        </li> -->                   </ul>
+                </div>
+                <span class="split_line split_line_bottom">
+                    <i class="line_light"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="dz_center_content_box">
+        <div style="display: none"></div>
+        <div class="dz_honor_box" style="display: none">
+            <div class="img_div">
+                <div class="" id="featured-area">
+                    <ul>
+                        <li>
+                            <img src="${require('../img/ph1.jpg')}">
+                            <div>
+                                2012先进基层党组织
+                                <b class="dz_fea_left_bottom"></b>
+                                <b class="dz_fea_right_bottom"></b>
+                            </div>
+                            <b class="dz_fea_left_top"></b>
+                            <b class="dz_fea_right_top"></b>
+                        </li>
+                        <li>
+                            <img src="${require('../img/ph2.jpg')}">
+                            <div>2017先进基层党组织
+                                <b class="dz_fea_left_bottom"></b>
+                                <b class="dz_fea_right_bottom"></b>
+                            </div>
+                            <b class="dz_fea_left_top"></b>
+                            <b class="dz_fea_right_top"></b>
+                        </li>
+                        <li>
+                            <img src="${require('../img/ph3.jpg')}">
+                            <div>2018先进基层党组织
+                                <b class="dz_fea_left_bottom"></b>
+                                <b class="dz_fea_right_bottom"></b>
+                            </div>
+                            <b class="dz_fea_left_top"></b>
+                            <b class="dz_fea_right_top"></b>
+                        </li>
+                        <li>
+                            <img src="${require('../img/ph4.jpg')}">
+                            <div>2019先进基层党组织
+                                <b class="dz_fea_left_bottom"></b>
+                                <b class="dz_fea_right_bottom"></b>
+                            </div>
+                            <b class="dz_fea_left_top"></b>
+                            <b class="dz_fea_right_top"></b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dz_chassis_box">
+                <img src="${require('../img/chassis.png')}" alt="">
+                <div class="dz_chassis1"></div>
+            </div>
+        </div>
+        <div class="dz_propaganda_box" style="display: none">
+            <div class="dz_dialog_box dz_animated">
+                <div class="dz_dialog1">
+                    <div class="dz_dialog1_left_box">
+                        <div class="dz_circle"></div>
+                        <div class="dz_line1"></div>
+                        <div class="dz_line2"></div>
+                        <div class="dz_line3"></div>
+                    </div>
+                    <div class="dz_dialog1_right_box">
+                        <div class="dz_circle"></div>
+                        <div class="dz_line1"></div>
+                        <div class="dz_line2"></div>
+                        <div class="dz_line3"></div>
+                    </div>
+                </div>
+                <div class="dz_dialog1 dz_dialog_bottom">
+                    <div class="dz_dialog1_left_box">
+                        <div class="dz_circle"></div>
+                        <div class="dz_line1"></div>
+                        <div class="dz_line2"></div>
+                        <div class="dz_line3"></div>
+                    </div>
+                    <div class="dz_dialog1_right_box">
+                        <div class="dz_circle"></div>
+                        <div class="dz_line1"></div>
+                        <div class="dz_line2"></div>
+                        <div class="dz_line3"></div>
+                    </div>
+                </div>
+                <div class="dz_dialog_left_box"></div>
+                <div class="dz_dialog_right_box"></div>
+                <div class="dz_dialog_left">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="dz_dialog_right">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="dz_title">党建宣传</div>
+            <div class="dz_content">
+                <div class="dz_left_content">
+                    <div class="c-banner">
+                        <div class="banner">
+                            <ul>
+                                <li><img src="${require('../img/propagandabanner.png')}"></li>
+                                <li><img src="${require('../img/propagandabanner.png')}"></li>
+                            </ul>
+                        </div>
+                        <div class="jumpBtn">
+                            <ul>
+                                <li jumpImg="0"></li>
+                                <li jumpImg="1"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="dz_right_content">
+                    <div class="dz_right_title">渝高公司党委开展革命传统教育</div>
+                    <div class="dz_right_small_content" id="propaganda">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按照重庆市委、两江新区党工委、两江产业集团党委关于“不忘初心、牢记使命”主题教育工作要求，结合渝高公司集中学习研讨方案，日前，渝高公司党委组织党员前往邱少云烈士纪念馆开展革命传统教育。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过参观烈士遗物、了解烈士生平，党员们深刻感受到烈士为取得革命事业胜利而展现的集体主义精神、自我牺牲精神和“纪律高于生命”的坚强信念。随后，党员们来到邱少云烈士纪念碑前，重温入党誓词。大家纷纷表示，一定要倍加珍惜革命先烈用鲜血换来的美好生活；一定要秉持优良的革命传统精神，不忘初心、牢记使命；一定要结合实际，围绕主题教育目标，找差距、抓落实，为推动公司高质量发展努力奋斗。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按照重庆市委、两江新区党工委、两江产业集团党委关于“不忘初心、牢记使命”主题教育工作要求，结合渝高公司集中学习研讨方案，日前，渝高公司党委组织党员前往邱少云烈士纪念馆开展革命传统教育。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过参观烈士遗物、了解烈士生平，党员们深刻感受到烈士为取得革命事业胜利而展现的集体主义精神、自我牺牲精神和“纪律高于生命”的坚强信念。随后，党员们来到邱少云烈士纪念碑前，重温入党誓词。大家纷纷表示，一定要倍加珍惜革命先烈用鲜血换来的美好生活；一定要秉持优良的革命传统精神，不忘初心、牢记使命；一定要结合实际，围绕主题教育目标，找差距、抓落实，为推动公司高质量发展努力奋斗。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按照重庆市委、两江新区党工委、两江产业集团党委关于“不忘初心、牢记使命”主题教育工作要求，结合渝高公司集中学习研讨方案，日前，渝高公司党委组织党员前往邱少云烈士纪念馆开展革命传统教育。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过参观烈士遗物、了解烈士生平，党员们深刻感受到烈士为取得革命事业胜利而展现的集体主义精神、自我牺牲精神和“纪律高于生命”的坚强信念。随后，党员们来到邱少云烈士纪念碑前，重温入党誓词。大家纷纷表示，一定要倍加珍惜革命先烈用鲜血换来的美好生活；一定要秉持优良的革命传统精神，不忘初心、牢记使命；一定要结合实际，围绕主题教育目标，找差距、抓落实，为推动公司高质量发展努力奋斗。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按照重庆市委、两江新区党工委、两江产业集团党委关于“不忘初心、牢记使命”主题教育工作要求，结合渝高公司集中学习研讨方案，日前，渝高公司党委组织党员前往邱少云烈士纪念馆开展革命传统教育。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dz_historical_box" style="display: none">
+            <div class="dz_historical_left_box">
+                <div class="animated dz_delay1">
+                    <p><b>预备党员</b> <img src="${require('../img/hisicon1.png')}" alt=""></p>
+                    <p><b>108</b></p>
+                </div>
+                <div class="dz_historical_left_last_box animated dz_delay3">
+                    <p><b>党积极分子</b> <img src="${require('../img/hisicon3.png')}" alt=""></p>
+                    <p><b>59</b></p>
+                </div>
+            </div>
+            <div class="dz_big animated">
+                <div class="dz_big_center_box">
+                    <div class="hg_small_center_box">
+                        <div class="hg_small_center_box4">
+                            <div class="hg_small_center_box2">
+                                <div class="hg_small_center_box3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dz_big_center_content_box">
+                    <div>
+                        <p>174</p>
+                        <p>党员</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dz_historical_right_box">
+                <div class="animated dz_delay5">
+                    <p><b>在岗党员</b> <img src="${require('../img/hisicon2.png')}" alt=""></p>
+                    <p><b>157</b></p>
+                </div>
+                <div class="dz_historical_left_last_box animated dz_delay7">
+                    <p><b>退休党员</b> <img src="${require('../img/hisicon4.png')}" alt=""></p>
+                    <p><b>17</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//右侧部分-->
+    <div class="right_content_box">
+        <ul class="items_lis">
+            <li class="item_li">
+                <p class="item_text active">
+                    <span class="split_line split_line_top"></span>
+                    党建事记
+                    <span class="split_line split_line_bottom"></span>
+                </p>
+                <!--<span class="item_icon"></span>-->
+            </li>
+            <li class="item_li">
+                <p class="item_text">
+                    <span class="split_line split_line_top"></span>
+                    荣誉奖项
+                    <span class="split_line split_line_bottom"></span>
+                </p>
+            </li>
+            <li class="item_li">
+                <p class="item_text">
+                    <span class="split_line split_line_top"></span>
+                    党建宣传
+                    <span class="split_line split_line_bottom"></span>
+                </p>
+            </li>
+            <li class="item_li">
+                <p class="item_text">
+                    <span class="split_line split_line_top"></span>
+                    发展党员人数历史统计
+                    <span class="split_line split_line_bottom"></span>
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

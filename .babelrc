@@ -1,0 +1,13 @@
+/*{
+    "presets": ["es2015", "stage-2"],         //严格模式
+    "comments": false,
+    "env": {
+    }
+}*/
+
+
+{
+    "presets": [
+        ["es2015", { "modules": false }]     //非严格模式
+    ]
+}

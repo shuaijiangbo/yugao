@@ -1,0 +1,302 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>-->
+<div >
+    <!--<div class="content_box">-->
+
+        <!--<canvas id="canvasMap" ></canvas>-->
+        <div class="unit" data-name="popBuildNetwork" id="unit1">
+            <div class="describe_box">
+                <div class="circle_bg_box">
+                    <div>
+                        <p class="first_inner"></p>
+                        <p class="second_inner"></p>
+                        <p class="third_inner"></p>
+                        <p class="fouth_inner"></p>
+                        <p class="five_icon">
+                            <i class="iconxinhao iconfont"></i>
+                            <i class="iconxinhao iconfont"></i>
+                            <i class="iconxinhao iconfont"></i>
+                            <i class="iconxinhao iconfont"></i>
+                            <i class="iconxinhao iconfont"></i>
+                            <i class="iconxinhao iconfont"></i>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="name">礼嘉生态城基础建设</p>
+                    <p class="num_unit">
+                        <sapn class="number">12</sapn>
+                        <span>平方公里</span>
+                    </p>
+                </div>
+            </div>
+            <div class="BoxGeometry_box" >
+                <%= require('common')('BoxGeometry/BoxGeometry','1') %>
+            </div>
+            <div class="wave_box" >
+                <%= require('common')('wave/wave','1') %>
+            </div>
+        </div>
+
+        <div class="unit" id="unit2" data-name="popBuildRoad">
+            <div class="describe_box">
+                <div class="circle_bg_box">
+                    <div>
+                        <p class="first_inner"></p>
+                        <p class="second_inner"></p>
+                        <p class="third_inner"></p>
+                        <p class="fouth_inner"></p>
+                        <p class="five_icon">
+                            <i class="icondaolujiaotong iconfont"></i>
+                            <i class="icondaolujiaotong iconfont"></i>
+                            <i class="icondaolujiaotong iconfont"></i>
+                            <i class="icondaolujiaotong iconfont"></i>
+                            <i class="icondaolujiaotong iconfont"></i>
+                            <i class="icondaolujiaotong iconfont"></i>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="name">道路 <sapn class="number"> 350 </sapn> 公里</p>
+                    <p class="num_unit">立交桥 <sapn class="number"> 15 </sapn> 座</p>
+                </div>
+            </div>
+            <div class="BoxGeometry_box" >
+                <%= require('common')('BoxGeometry/BoxGeometry','1') %>
+            </div>
+            <div class="wave_box" >
+                <%= require('common')('wave/wave','1') %>
+            </div>
+        </div>
+
+        <div class="unit" data-name="popBuildPark" id="unit3">
+            <div class="describe_box">
+                <div class="circle_bg_box">
+                    <div>
+                        <p class="first_inner"></p>
+                        <p class="second_inner"></p>
+                        <p class="third_inner"></p>
+                        <p class="fouth_inner"></p>
+                        <p class="iconContainer">
+                            <iframe src="static/pick/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="name">公园广场 <sapn class="number"> 25 </sapn>个</p>
+                    <p class="num_unit">共计
+                        <sapn class="number">10037</sapn>
+                        <span>亩</span>
+                    </p>
+                </div>
+            </div>
+            <div class="BoxGeometry_box" >
+                <%= require('common')('BoxGeometry/BoxGeometry','1') %>
+            </div>
+            <div class="wave_box" >
+                <%= require('common')('wave/wave','1') %>
+            </div>
+        </div>
+
+        <div class="unit" id="unit4" data-name="popTotalInvest">
+            <div class="describe_box">
+                <div class="circle_bg_box">
+                    <div>
+                        <p class="first_inner"></p>
+                        <p class="second_inner"></p>
+                        <p class="third_inner"></p>
+                        <p class="fouth_inner"></p>
+                        <p class="five_icon">
+                            <i class="iconmoney iconfont"></i>
+                            <i class="iconmoney iconfont"></i>
+                            <i class="iconmoney iconfont"></i>
+                            <i class="iconmoney iconfont"></i>
+                            <i class="iconmoney iconfont"></i>
+                            <i class="iconmoney iconfont"></i>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="name">累计完成投资总额</p>
+                    <p class="num_unit">
+                        <sapn class="number">500</sapn>
+                        <span>亿元</span>
+                    </p>
+                </div>
+            </div>
+            <div class="BoxGeometry_box" >
+                <%= require('common')('BoxGeometry/BoxGeometry','1') %>
+            </div>
+            <div class="wave_box" >
+                <%= require('common')('wave/wave','1') %>
+            </div>
+        </div>
+
+        <div class="unit" id="unit5" data-name="popBuildBuilding">
+            <div class="describe_box">
+                <div class="circle_bg_box">
+                    <div>
+                        <p class="first_inner"></p>
+                        <p class="second_inner"></p>
+                        <p class="third_inner"></p>
+                        <p class="fouth_inner"></p>
+                        <p class="five_icon">
+                            <i class="iconicon-test iconfont"></i>
+                            <i class="iconicon-test iconfont"></i>
+                            <i class="iconicon-test iconfont"></i>
+                            <i class="iconicon-test iconfont"></i>
+                            <i class="iconicon-test iconfont"></i>
+                            <i class="iconicon-test iconfont"></i>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="name">集团累计建设房屋</p>
+                    <p class="num_unit">
+                        <sapn class="number">1000</sapn>
+                        <span>万m²</span>
+                    </p>
+                </div>
+            </div>
+            <div class="BoxGeometry_box" >
+                <%= require('common')('BoxGeometry/BoxGeometry','1') %>
+            </div>
+            <div class="wave_box" >
+                <%= require('common')('wave/wave','1') %>
+            </div>
+        </div>
+
+        <div class="unit" id="unit6" data-name="popBuildBridge">
+            <div class="describe_box">
+                <div class="circle_bg_box">
+                    <div>
+                        <p class="first_inner"></p>
+                        <p class="second_inner"></p>
+                        <p class="third_inner"></p>
+                        <p class="fouth_inner"></p>
+                        <p class="five_icon">
+                            <i class="iconhutonglijiao iconfont"></i>
+                            <i class="iconhutonglijiao iconfont"></i>
+                            <i class="iconhutonglijiao iconfont"></i>
+                            <i class="iconhutonglijiao iconfont"></i>
+                            <i class="iconhutonglijiao iconfont"></i>
+                            <i class="iconhutonglijiao iconfont"></i>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="name">建设学校<span class="number"> 61 </span>所</p>
+                    <p class="num_unit">医院
+                        <sapn class="number"> 2 </sapn>
+                        <span>座</span>
+                    </p>
+                </div>
+            </div>
+            <div class="BoxGeometry_box" >
+                <%= require('common')('BoxGeometry/BoxGeometry','1') %>
+            </div>
+            <div class="wave_box" >
+                <%= require('common')('wave/wave','1') %>
+            </div>
+        </div>
+
+        <div class="unit" id="unit7" data-name="stateOwned">
+            <div class="describe_box">
+                <div class="circle_bg_box">
+                    <div>
+                        <p class="first_inner"></p>
+                        <p class="second_inner"></p>
+                        <p class="third_inner"></p>
+                        <p class="fouth_inner"></p>
+                        <p class="five_icon">
+                            <i class="iconqiyerenzheng iconfont"></i>
+                            <i class="iconqiyerenzheng iconfont"></i>
+                            <i class="iconqiyerenzheng iconfont"></i>
+                            <i class="iconqiyerenzheng iconfont"></i>
+                            <i class="iconqiyerenzheng iconfont"></i>
+                            <i class="iconqiyerenzheng iconfont"></i>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="name">工 程 数 智 化</p>
+                </div>
+            </div>
+            <div class="BoxGeometry_box" >
+                <%= require('common')('BoxGeometry/BoxGeometry','1') %>
+            </div>
+            <div class="wave_box" >
+                <%= require('common')('wave/wave','1') %>
+            </div>
+        </div>
+        <div class="unit" id="unit8" data-name="popDevelopHistory" >
+            <div class="describe_box">
+                <div class="circle_bg_box">
+                    <div>
+                        <p class="first_inner"></p>
+                        <p class="second_inner"></p>
+                        <p class="third_inner"></p>
+                        <p class="fouth_inner"></p>
+                        <p class="five_icon">
+                            <i class="iconhutonglijiao iconfont"></i>
+                            <i class="iconhutonglijiao iconfont"></i>
+                            <i class="iconhutonglijiao iconfont"></i>
+                            <i class="iconhutonglijiao iconfont"></i>
+                            <i class="iconhutonglijiao iconfont"></i>
+                            <i class="iconhutonglijiao iconfont"></i>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="name">工程管理经验</p>
+                    <p class="num_unit">
+                        <sapn class="number">27</sapn>
+                        <span>年</span>
+                    </p>
+                </div>
+            </div>
+            <div class="BoxGeometry_box" >
+                <%= require('common')('BoxGeometry/BoxGeometry','1') %>
+            </div>
+            <div class="wave_box" >
+                <%= require('common')('wave/wave','1') %>
+            </div>
+        </div>
+
+        <div class="center_box" id="centerBox">
+            <img class="light_beam" src="<%= require('../img/yg_home_Light_center.png')%>"  alt="">
+            <div class="line_box">
+                <%= require('common')('canvasLine/canvasLine','1') %>
+            </div>
+            <p class="name figure_box">
+                <!--<figure>-->
+                    <span class="d3_text">累计完成工程</span>
+                    <span class="d3_text">累计完成工程</span>
+                    <span class="d3_text">累计完成工程</span>
+                    <span class="d3_text">累计完成工程</span>
+                <!--</figure>-->
+            </p>
+            <p class="num_unit figure_box">
+                <span class="number d3_text">520个</span>
+                <span class="number d3_text">520个</span>
+                <span class="number d3_text">520个</span>
+                <span class="number d3_text">520个</span>
+                <!--<span>个</span>-->
+            </p>
+            <img class="light_beam_bottom" src="<%= require('../img/yg_home_site_center.png')%>"  alt="">
+        </div>
+
+    <div class="centerContainer" id="centerContainer">
+        <iframe src="static/centre(7)/index.html" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+
+    <div class="pop_box_container pop_in_animate" id="popBoxContainer">
+        <%= require('common')('popBox/popBox','1') %>
+    </div>
+ <!--   </div>-->
+</div>
+<!--</html>-->

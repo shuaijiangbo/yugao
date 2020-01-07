@@ -1,0 +1,1003 @@
+body{
+  background:#111;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  font-family:"Microsoft Yahei",微软雅黑;
+  .content_box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+.dz_relative{
+  position: relative;
+}
+@font-face
+{
+  font-family: SHUZI;
+  src:url('../iconfont/sz.ttf') format('truetype')
+}
+
+#parkBuildingCenter{
+  .left_content_box{        //左侧部分
+    width: 23.2%!important;
+    height: 90%;
+    position: absolute;
+    left: 0;
+    top: 8%;
+    padding-left: 2.8%;
+    z-index: 100;
+    /*background: -webkit-linear-gradient(left, #1edf17, #1edf17, #3ceded, #5d83ff);*/
+    background: -webkit-linear-gradient(left, rgba(0,2,3,1),rgba(0,2,3,.7), rgba(0,2,3,0.2));
+    .left_title{
+      color: #fff;
+      font-size: 16px;
+      padding: 5px 0;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      margin: .03rem 0;
+      .title_icop{
+        width: 1.8%;
+        height: 0.05rem;
+        background: url('../img/yg_business.png') no-repeat center;
+        background-size: 100% 100%;
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 1.5%;
+      }
+    }
+    .dz_left_title{
+      position: absolute;
+      width: 26%;
+      right: 0;
+      top: -9px;
+      .title_icop{
+        width: 7%!important;
+        margin-right: 5%!important;
+      }
+    }
+    .dz_park_member{
+      width: 100%;
+      height: 19%;
+      .dz_park_member_content{
+        background-color: rgba(13,78,99,.2);
+        .dz_cl{
+          padding: 1.2em 1%;
+          overflow: hidden;
+          height: .35rem;
+          width: 100%;
+          >div.member_content_box{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            .member_items{
+              position: absolute;
+              width: 4.268rem;
+              >li.member_item{
+                width: .332rem;
+                padding: 0 .2%;
+                position: relative;
+                float: left;
+                >div{
+                  text-align: center;
+                  background-color: rgba(0,0,0,.73);
+                  position: absolute;
+                  left: 1%;
+                  right: 1%;
+                  color:rgba(18,207,230,1);
+                  bottom: 0;
+                  padding: 1% 0 4%;
+                  -moz-box-shadow:0px 0px 7px 5px rgba(0, 0, 0, 0.53); /* 老的 Firefox */
+                  -o-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.53);
+                  -webkit-box-shadow:  0px 0px 7px 5px rgba(0, 0, 0, 0.53);
+                  box-shadow:0px 0px 7px 5px rgba(0, 0, 0, 0.53);
+                }
+              }
+              &:after{
+                content:'';
+                clear: both;
+                overflow: hidden;
+                display: block;
+              }
+            }
+          }
+
+        }
+      }
+    }
+    .dz_park_organization{
+      width: 100%;
+      height: 21%;
+      .dz_park_organization_content {
+        background-color: rgba(13, 78, 99, .2);
+        .dz_cl{
+          padding: 2%;
+          >div{
+            width: 33.333%;
+            padding: 0 1%;
+            color: #fff;
+            .dz_box{
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+              background-color: rgba(17,210,233,.3);
+              padding:5% 4%;
+              text-align: center;
+              .dz_title{
+                width: 100%;
+                background-color: rgba(255,255,255,.2);
+                padding:5% 4%;
+                font-size: 16px;
+                letter-spacing: 1px;
+              }
+              .dz-content{
+                padding-top: 7%;
+                text-align: center;
+                height: 55px;
+                .count span{
+                  color: #fff
+                }
+                >div{
+                  display: inline-block;
+                  vertical-align: middle;
+                }
+                b{
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 29px;
+                  height: 37px;
+                  background:  url("../img/park_bg.png");
+                  -webkit-background-size: 100% 100%;
+                  background-size: 100% 100%;
+                  line-height: 37px;
+                  font-size: 16px;
+                  font-family: FZY;
+                }
+                span{
+                  color: #11d3ea;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .dz_park_news{
+      width: 100%;
+      height: 34%;
+    }
+    .news_box{
+      .news_pic_box{
+        width: 100%;
+        display: flex;
+        position: relative;
+        padding: 4px 0;
+        .show_pic{
+          width: 70%;
+          height: .72rem;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .pic_lists-box{
+          width: 30%;
+          height: .72rem;
+          .pic_lists{
+            height: .72rem;
+            li.pic_list{
+              height: .24rem;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .dz_framework{
+      width: 100%;
+      height: 21%;
+      .dz_pie_box {
+        width: 35%;
+        height: 130px;
+        float: left;
+      }
+      .dz_pie_itle{
+        background: -webkit-linear-gradient(#0a7380, #000202); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(#0a7380, #000202); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(#0a7380, #000202); /* Firefox 3.6 - 15 */
+        background: linear-gradient(#0a7380, #000202); /* 标准的语法 */
+        color: #08d7ed;
+        padding: 2px 5px;
+        width: 24px;
+        text-align: center;
+        line-height: 1.4;
+        position: absolute;
+      }
+      .dz_party_age_title{
+        left: 35%;
+      }
+    }
+    .split_line{
+      display: inline-block;
+      height: 4px;
+      width: 100%;
+      background:rgba(3, 20, 27, 0.7);
+      position: absolute;
+      left: 0;
+      .line_light{
+        background: radial-gradient(#10d0e5 10%, rgba(3, 20, 27, 0) 67%);
+        position: absolute;
+        height: 100%;
+        width: 20%;
+        display: inline-block;
+        left: 0;
+        /*animation: moveLightLine 4s linear infinite ;*/
+      }
+    }
+    .split_line_top{
+      top: 0;
+      .line_light{
+        animation: moveLightLine 4s linear infinite ;
+      }
+    }
+    .split_line_bottom{
+      bottom: 0;
+      .line_light{
+        animation: moveLightLine 4s linear 2s infinite ;
+      }
+    }
+    .hz-cl:after{
+        display:block;
+        clear:both;
+        content:"";
+        visibility:hidden;
+        height:0;
+    }
+    .dz_pull_left{
+      float: left;
+    }
+  }
+
+  .right_content_box{
+    width: 8%!important;
+    height: 82%;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    padding-right: 1.6%!important;
+    box-sizing: content-box;
+    background: -webkit-linear-gradient(right, #000203, rgba(0, 2, 3, 0.2))!important;
+    z-index: 110;
+    .items_lis{
+      height: 100%;
+      padding: 55% 0 85%;
+      box-sizing: border-box;
+      pointer-events: auto;
+      .item_li{
+        height: 28.75%;
+        position: relative;
+        pointer-events: auto;
+        overflow: hidden;
+        float: right;
+        width: 68%;
+        .item_text{
+          color: #53535b;
+          font-size: .06rem;
+          font-weight: bold;
+          vertical-align: 0.08rem;
+          position: relative;
+          padding: .035rem 25px .035rem 0;
+          text-align: right;
+          transition: all .6s linear;
+          .split_line{
+            display: inline-block;
+            height: 4px;
+            width: 100%;
+            background: radial-gradient(#10d0e5 10%, rgba(3, 20, 27, 0)60%);
+            position: absolute;
+            left: 87%;
+            transition: all .6s linear;
+          }
+          .split_line_top{
+            top: 0;
+          }
+          .split_line_bottom{
+            bottom: 0;
+          }
+        }
+        .item_text.active{
+          color: #19fabd;
+          background: -webkit-linear-gradient(left,rgba(17,209,232,0),rgba(17,209,232,.1), rgba(17,209,232,.3),rgba(17,209,232,0));
+          .split_line{
+            left: 0;
+          }
+        }
+        .item_icon{
+          background: url("../img/yg_process.png");
+          width: 40%;
+          background-size: cover;
+          display: inline-block;
+          height: .2rem;
+        }
+      }
+      .item_li:last-child{
+        width: 100%;
+      }
+    }
+  }
+
+  .dz_center_content_box{
+    width: 53%;
+    height: 82%;
+    position: absolute;
+    left: 23%;
+    top: 10%;
+    z-index: 110;
+    .dz_historical_box{
+      position:absolute;
+      width: 1200px;
+      height: 550px;
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%,-50%);
+      -webkit-transform:translate(-50%,-50%);  /*兼容-webkit-引擎浏览器*/
+      -moz-transform:translate(-50%,-50%);
+      .dz_big_center_box{
+        width: 510px;
+        height: 510px;
+        background: url('../img/4.png') no-repeat center;
+        animation: clockwiseRotate 7s linear infinite;
+        position: absolute;
+        top: 7%;
+        left: 30%;
+      }
+      .hg_small_center_box{
+        width: 100%;
+        height: 100%;
+        background: url('../img/5.png') no-repeat center;
+        animation: anticlockwiseRotate 5s linear infinite;
+      }
+      .hg_small_center_box2{
+        width: 100%;
+        height: 100%;
+        background: url('../img/3.png') no-repeat center;
+        animation: clockwiseRotate 4s linear infinite;
+      }
+      .hg_small_center_box3{
+        width: 100%;
+        height: 100%;
+        background: url('../img/2.png') no-repeat center;
+        animation: anticlockwiseRotate 3s linear infinite;
+      }
+      .hg_small_center_box4{
+        width: 100%;
+        height: 100%;
+        background: url('../img/1.png') no-repeat center;
+        //animation: anticlockwiseRotate 3s linear infinite;
+      }
+      .dz_historical_left_box,.dz_historical_right_box{
+        position: absolute;
+        left: 2.5%;
+        top: 26.5%;
+        img{
+          vertical-align: middle;
+        }
+        >div{
+          width: 403px;
+          height: 114px;
+          background: url("../img/historical2.png");
+          background-size: 100% 100%;
+          text-align: center;
+          padding: 15px 15px 15px 120px;
+          line-height: 1.4;
+          font-size: 23px;
+          p:first-child{
+            color: #fff;
+          }
+          p:last-child{
+            color: #ffd200;
+            font-size: 44px;
+          }
+        }
+        .dz_historical_left_last_box{
+          margin-top: 75px;
+          background-image: url("../img/historical21.png");
+        }
+      }
+      .dz_historical_right_box{
+        left: 66.5%;
+        top: 26.5%;
+        >div{
+          padding: 15px 120px 15px 15px;
+          background-image: url("../img/historical12.png");
+        }
+        .dz_historical_left_last_box{
+          background-image: url("../img/historical22.png");
+        }
+      }
+      .dz_big_center_content_box{
+        width: 510px;
+        height: 510px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 7%;
+        left: 30%;
+        z-index: 20;
+        >div{
+          p{
+            color: #ffd200;
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 1.4;
+          }
+          p:last-child{
+            font-size: 45px;
+            font-weight: bold;
+            color: #00faff;
+          }
+        }
+      }
+    }
+    .dz_propaganda_box{
+      width: 77.69%;
+      height: 86%;
+      position: absolute;
+      left: 12%;
+      top: 9%;
+      background: url("../img/propagandabg.png") no-repeat;
+      background-size: 100% 100%;
+      color: #fff;
+      .dz_title{
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.9;
+      }
+      .dz_content{
+        height: 89%;
+        padding: 3% 4.5% 5% 5.8%;
+        position: relative;
+        z-index: 10;
+        .dz_left_content{
+          height: 100%;
+          width: 46%;
+          float: left;
+          padding-left: 1.5%;
+        }
+        .dz_right_content{
+          height: 100%;
+          width: 53%;
+          float: right;
+          overflow: hidden;
+          .dz_right_title{
+            font-size: 26px;
+          }
+          .dz_right_small_content{
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 86%;
+            width: 103%;
+            margin-top: 4%;
+            font-size: 18px;
+            color:#fff;
+            line-height: 1.7;
+          }
+        }
+        .dz_left_content{
+          /* banner */
+          .c-banner{
+            width: 100%;
+            position: relative;
+            height: 100%;
+            >div.banner{
+              height: 100%;
+            }
+          }
+          .c-banner img{
+            width: 100%;
+          }
+          .c-banner .banner ul{
+            list-style: none;
+            padding-left: 0px;
+            margin-bottom: 0px;
+          }
+          .c-banner .banner ul li{
+            position: absolute;
+            display: none;
+            opacity: 0;
+          }
+          .c-banner .banner ul li:nth-child(1){
+            opacity: 1;
+            display: block;
+          }
+          .c-banner .banner ul li img{
+            width: 100%;
+            position: absolute;
+            top: 0px;
+          }
+          .c-banner .banner ul li:first-child img{
+            position: relative;
+          }
+          .c-banner .nexImg,.c-banner .preImg{
+            padding: 25px 10px 25px 10px;
+            position: absolute;
+            top: 50%;
+            margin-top: -53px;
+            background: #000000;
+            opacity: 0.5;
+            border-radius: 5px;
+            z-index: 10;
+
+          }
+          .c-banner .nexImg:hover,.c-banner .preImg:hover{
+            opacity: 0.8;
+          }
+          .c-banner .nexImg{
+            right: 0px;
+          }
+          .c-banner .jumpBtn{
+            width: 100%;
+            position: absolute;
+            bottom: 6px;
+            text-align: center;
+          }
+          .c-banner .jumpBtn ul{
+            margin-bottom: 0px;
+            padding: 0px;
+            text-align: right;
+            padding-right: 50px;
+          }
+
+          .c-banner .jumpBtn ul li{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            opacity: 0.9;
+            margin-left: 10px;
+          }
+          .c-banner .jumpBtn ul li:first-child{
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+    .dz_honor_box{
+      .img_div{
+        margin-top: 5.5%;
+      }
+      .dz_chassis_box{
+        position: absolute;
+        top: 22%;
+        left: 35%;
+        img{
+          position: relative;
+          z-index: 10;
+        }
+        .dz_chassis1{
+          background: url("../img/chassiscircle.png") no-repeat;
+          background-size: 100% 100%;
+          width: 79%;
+          height: 20%;
+          position: absolute;
+          bottom: -9%;
+          left: 10.5%;
+          animation: ani_bottom 3s linear alternate infinite;
+        }
+      }
+    }
+  }
+}
+.dz_delay1{
+  animation-delay:0.3s;
+  -webkit-animation-delay:0.3s; /* Safari 和 Chrome */
+}
+.dz_delay2{
+  animation-delay:0.6s;
+  -webkit-animation-delay:0.6s; /* Safari 和 Chrome */
+}
+.dz_delay3{
+  animation-delay:0.9s;
+  -webkit-animation-delay:0.9s; /* Safari 和 Chrome */
+}
+.dz_delay4{
+  animation-delay:1.2s;
+  -webkit-animation-delay:1.2s; /* Safari 和 Chrome */
+}
+.dz_delay5{
+  animation-delay:1.5s;
+  -webkit-animation-delay:1.5s; /* Safari 和 Chrome */
+}
+.dz_delay6{
+  animation-delay:1.8s;
+  -webkit-animation-delay:1.8s; /* Safari 和 Chrome */
+}
+.dz_delay7{
+  animation-delay:2.1s;
+  -webkit-animation-delay:2.1s; /* Safari 和 Chrome */
+}
+.dz_delay8{
+  animation-delay:2.4s;
+  -webkit-animation-delay:2.4s; /* Safari 和 Chrome */
+}
+.dz_delay9{
+  animation-delay:2.7s;
+  -webkit-animation-delay:2.7s; /* Safari 和 Chrome */
+}
+.dz_delay10{
+  animation-delay:3s;
+  -webkit-animation-delay:3s; /* Safari 和 Chrome */
+}
+.dz_delay11{
+  animation-delay:3.3s;
+  -webkit-animation-delay:3.3s; /* Safari 和 Chrome */
+}
+.dz_delay12{
+  animation-delay:3.6s;
+  -webkit-animation-delay:3.6s; /* Safari 和 Chrome */
+}
+.dz_dialog_box{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+.dz_dialog_box.dz_animated{
+  .dz_dialog1{
+    height: 40px;
+    width: 73.9%;
+    position: absolute;
+    left: 13.05%;
+    right: 13.05%;
+    top: 7.3%;
+    //background-color: #fffdef;
+    .dz_dialog1_left_box,.dz_dialog1_right_box{
+      width:50%;
+      position: absolute;
+      left: 0;
+      //background-color: white;
+      height: 100%;
+      .dz_circle{
+        width:14px ;
+        height: 14px;
+        border:4px solid #c5dbd5;
+        border-radius: 50%;
+        position: absolute;
+        left: -14px;
+        opacity: 0;
+        animation: ani_show 0.2s;
+        animation-delay:1.5s;
+        animation-fill-mode: forwards;
+      }
+      .dz_line1{
+        height: 4px;
+        background-color: #c5dbd5 ;
+        width: 0;
+        position: absolute;
+        left: 0px;
+        top: 5px;
+        animation: ani_width 0.5s;
+        animation-delay:1s;
+        animation-fill-mode: forwards;
+      }
+      .dz_line2{
+        width: 5px;
+        background-color: #c5dbd5;
+        transform: skewX(-315deg);
+        position: absolute;
+        left: 36.8%;
+        height: 0;
+        top: 5px;
+        animation: ani_height 0.2s;
+        animation-delay:0.8s;
+        animation-fill-mode: forwards;
+      }
+      .dz_line3{
+        position: absolute;
+        height: 4px;
+        background-color: #c5dbd5;
+        left: 100%;
+        right: 0;
+        top: 18px;
+        animation: ani_left 0.8s;
+        //animation-delay:0.2s;
+        animation-fill-mode: forwards;
+      }
+    }
+    .dz_dialog1_right_box{
+      left: 50%;
+      //background-color: red;
+      .dz_circle{
+        left: auto;
+        right: -14px;
+      }
+      .dz_line1{
+        right: 0px;
+        left: auto;
+      }
+      .dz_line2{
+        transform: skewX(-45deg);
+        left: 62.1%;
+      }
+      .dz_line3{
+        left: 0;
+        right: 100%;
+        animation: ani_right 1.3s;
+        //animation-delay:0.2s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  .dz_dialog1.dz_dialog_bottom{
+    bottom: 2%;
+    top: auto;
+    transform: rotateX(180deg);
+  }
+  .dz_dialog_left_box{
+    width: 19%;
+    height: 93%;
+    background: url("../img/dialogbgleft.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 2%;
+    top: 4%;
+    left: auto;
+    opacity: 0;
+    animation: ani_show 0.6s;
+    animation-delay:1.7s;
+    animation-fill-mode: forwards;
+  }
+  .dz_dialog_right_box{
+    width: 19%;
+    height: 93%;
+    background: url("../img/dialogbgleft.png") no-repeat left center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 2%;
+    top: 4%;
+    right: auto;
+    opacity: 0;
+    transform: rotateY(180deg);
+    animation: ani_show 0.6s;
+    animation-delay:1.7s;
+    animation-fill-mode: forwards;
+  }
+  .dz_dialog_left{
+    position: absolute;
+    top: 3%;
+    left: 21.2%;
+    width: 10%;
+    opacity: 0;
+    animation: ani_show 0.5s;
+    animation-delay:2.3s;
+    animation-fill-mode: forwards;
+    >div{
+      width: 12px;
+      height: 13px;
+      transform: skewX(45deg);
+      background: #c4ddd7;
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 2px;
+      margin: 0 2px;
+      //opacity: 0;
+      animation: ani_show 1.5s linear infinite;
+      animation-delay: 0.5s;
+    }
+    >div:nth-child(2){
+      height: 17px;
+      animation-delay: 1s;
+    }
+    >div:nth-child(3){
+      height: 20px;
+      animation-delay: 1.5s;
+    }
+  }
+  .dz_dialog_right{
+    position: absolute;
+    top: 3%;
+    right: 21.2%;
+    width: 10%;
+    opacity: 0;
+    animation: ani_show 0.5s;
+    animation-delay:2.3s;
+    animation-fill-mode: forwards;
+    text-align: right;
+    >div{
+      width: 12px;
+      height: 20px;
+      transform: skewX(-45deg);
+      background: #c4ddd7;
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 2px;
+      margin: 0 2px;
+      //opacity: 0;
+      animation: ani_show 1.5s linear infinite;
+      animation-delay: 1.5s;
+    }
+    >div:nth-child(2){
+      height: 17px;
+      animation-delay: 1s;
+    }
+    >div:nth-child(3){
+      height: 14px;
+      animation-delay: 0.5s;
+    }
+  }
+}
+@keyframes ani_show {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+@keyframes ani_width {
+  from {width:0}
+  to {width:36%}
+}
+@keyframes ani_height {
+  from {height: 0px;}
+  to {height: 15px;}
+}
+@keyframes ani_left {
+   from {left:100%}
+   to {left:  38.7%;}
+ }
+@keyframes ani_right {
+  from {right:100%}
+  to {right: 38.7%;}
+}
+@keyframes ani_bottom {
+  from {bottom: -5%;width: 79%;left: 10.5%;}
+  to {bottom: -15%;width: 84%;left: 8%;}
+}
+.roundabout-moveable-item{
+  padding: 0!important;
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  border-radius: 0!important;
+  border: none!important;
+}
+.roundabout-moveable-item img{
+  border: 4px solid #00c38e;}
+.roundabout-moveable-item div{
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #19fabd!important;
+  transition: All 0.6s;
+  -webkit-transition: All 0.6s;
+  -moz-transition: All 0.6s;
+  -o-transition: All 0.6s;
+  position: relative;
+}
+.roundabout-moveable-item.roundabout-in-focus div{
+  font-size: 28px;
+}
+.roundabout-moveable-item b{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+.roundabout-moveable-item b.dz_fea_left_top{
+  border-top: 3px solid #00c38e;
+  border-left: 3px solid #00c38e;
+  top: -5px;
+  left: -5px;
+}
+.roundabout-moveable-item b.dz_fea_right_top{
+  border-top: 3px solid #00c38e;
+  border-right: 3px solid #00c38e;
+  top: -5px;
+  right: -5px;
+}
+.roundabout-moveable-item b.dz_fea_left_bottom{
+  border-bottom: 3px solid #00c38e;
+  border-left: 3px solid #00c38e;
+  bottom: -5px;
+  left: -5px;
+}
+.roundabout-moveable-item b.dz_fea_right_bottom{
+  border-bottom: 3px solid #00c38e;
+  border-right: 3px solid #00c38e;
+  bottom: -5px;
+  right: -5px;
+}
+.roundabout-moveable-item.roundabout-in-focus{
+  b.dz_fea_left_top{
+     animation: ani_top_left 1s linear alternate infinite;
+   }
+  b.dz_fea_right_top{
+    animation: ani_top_right 1s linear alternate infinite;
+  }
+  b.dz_fea_left_bottom{
+    animation: ani_bottom_left 1s linear alternate infinite;
+  }
+  b.dz_fea_right_bottom{
+    animation: ani_bottom_right 1s linear alternate infinite;
+  }
+}
+@keyframes ani_top_left {
+  from {
+    top: -10px;
+    left: -10px;
+    width: 25px;
+    height: 25px;
+  }
+  to {
+    top: -5px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+  }
+}
+@keyframes ani_top_right {
+  from {
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+  }
+  to {
+    top: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+  }
+}
+@keyframes ani_bottom_left {
+  from {
+    bottom: -10px;
+    left: -10px;
+    width: 25px;
+    height: 25px;
+  }
+  to {
+    bottom: -5px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+  }
+}
+@keyframes ani_bottom_right {
+  from {
+    bottom: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+  }
+  to {
+    bottom: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (min-width: 3300px) and (max-width: 4000px) {
+  #parkBuildingCenter .left_content_box .dz_framework {
+    height: 18%;
+  }
+}
+@media screen and (min-width: 3300px) and (max-width: 3800px) {
+  #parkBuildingCenter .left_content_box .dz_framework {
+    height: 18%;
+  }
+}
+#educationPie, #partyAgePie,#moveOutPie{
+  & > div:nth-child(2) {
+    background: -webkit-linear-gradient(left, rgba(40, 131, 221, 0.8), rgba(38, 210, 222, 0.4)) !important;
+  }
+}

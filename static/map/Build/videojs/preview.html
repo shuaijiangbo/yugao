@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>预览</title>
+<link href="video-js.css" rel="stylesheet">
+<link href="../../../css/index.css" rel="stylesheet">
+</head>
+<body>
+	<div id="video-div-preview">
+		<h1></h1>
+		<div class="video-video-div" style="height: 100%;">
+			<video id="rtmpVideo" class="video-js vjs-default-skin vjs-big-play-centered" autoplay="autoplay" preload="auto" loop="loop" style="height: 100%;width: 100%;">
+			</video>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../../jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../../config.js"></script>
+<script type="text/javascript" src="hls.min.js"></script>
+<script type="text/javascript" src="flv.min.js"></script>
+<script type="text/javascript" src="video.js"></script>
+<script type="text/javascript">
+	var deviceId=getParameter("deviceId");
+	var projectId=getParameter("projectId");
+	var url=getParameter("url");
+	if($.trim(projectId)==""||$.trim(deviceId)==""){
+		console.log("deviceId||projectId is null");
+		if($.trim(url)!=""){
+			new Video(document.getElementById('rtmpVideo'),url);
+		}
+	}else{
+		if (flvjs.isSupported()) {
+	        autoplay(projectId,deviceId);
+	    }
+	}
+	
+	
+	function autoplay(projectId,deviceId){
+		$.post(BASE_URL+"api/liveUrl",{projectId:projectId,deviceId:deviceId,streamType:"FLV"},function(result){
+			if(result.status==200&&result.data.returnCode==0&&$.trim(result.data.result.pullLiveUrl)!=""){
+				var src=result.data.result.pullLiveUrl;
+				var flvPlayer = flvjs.createPlayer({
+		            type: 'flv',
+		            url: src
+		        });
+				var videoElement = document.getElementById('rtmpVideo');
+		        flvPlayer.attachMediaElement(videoElement);
+				flvPlayer.load();
+		        flvPlayer.play();
+			}else{
+				autoplay(projectId,deviceId);
+			}
+		},"json");
+	}
+	
+</script>
+</html>

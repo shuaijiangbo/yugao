@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>进度管控中心</title>
+</head>
+<body>
+<div class="" id="progressManageCenter">
+    <!--//左侧部分-->
+    <div class="left_content_box">
+        <!--//项目投资管理-->
+        <div class="peoject_invest_manage ">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>项目投资管理</span>
+            </p>
+            <div class="chart_box chart_bar_box" id="peojectInvestChart">
+
+            </div>
+        </div>
+        <!--//招投标管理-->
+        <div class="peoject_progress_manage">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>招投标管理</span>
+            </p>
+            <div class="chart_box chart_line_box" id="peojectProgressChart">
+
+            </div>
+        </div>
+
+        <!--//合同管理-->
+        <div class="peoject_invest_manage">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>合同管理</span>
+            </p>
+            <div class="chart_box peoject_invest_box" id="contractManage">
+
+            </div>
+        </div>
+
+        <!--//结算数据-->
+        <div class="peoject_invest_manage ">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>结算数据</span>
+            </p>
+            <div class="chart_box chart_bar_box" id="accountDataBar"></div>
+        </div>
+        <!--//招投标管理-->
+        <!--<div class="peoject_bid_manage">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>招投标管理</span>
+            </p>
+            <div class="chart_box chart_pie_box" id="inviteTenderManage">
+
+            </div>
+        </div>-->
+
+        <ul class="tab_data_box">
+            <li class="tab_icon active">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    基础设施项目
+                </p>
+            </li>
+            <li class="tab_icon">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    社会事业项目
+                </p>
+            </li>
+            <li class="tab_icon">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    生态建设
+                </p>
+            </li>
+            <li class="tab_icon">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    公检法司
+                </p>
+            </li>
+            <li class="tab_icon">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    楼宇工程
+                </p>
+            </li>
+            <li class="tab_icon">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    公司自建
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="right_content_box">
+        <div class="statistics_box">
+            <ul class="statistics_lists">
+                <li class="statistics_list achieve_project">
+                    <div class="icon_box"></div>
+                    <img src="${require('../img/yg_project1.png')}" alt="">
+                    <span></span>
+                    <i></i>
+                    <div class="txt_box">
+                        <p class="engineering_name">完成工程</p>
+                        <p class="number">51项</p>
+                    </div>
+                </li>
+                <li class="statistics_list building_project">
+                    <div class="icon_box"></div>
+                    <img src="${require('../img/yg_build2.png')}" alt="">
+                    <span></span>
+                    <i></i>
+                    <div class="txt_box">
+                        <p class="engineering_name">在建</p>
+                        <p class="number">95项</p>
+                    </div>
+                </li>
+                <li class="statistics_list parksquare">
+                    <div class="icon_box"></div>
+                    <img src="${require('../img/yg_park2.png')}" alt="">
+                    <span></span>
+                    <i></i>
+                    <div class="txt_box">
+                        <p class="engineering_name">建设公园广场</p>
+                        <p class="number">25个</p>
+                    </div>
+                </li>
+                <li class="statistics_list overpass">
+                    <div class="icon_box"></div>
+                    <img src="${require('../img/yg_bridge2.png')}" alt="">
+                    <span></span>
+                    <i></i>
+                    <div class="txt_box">
+                        <p class="engineering_name">立交桥</p>
+                        <p class="number">15座</p>
+                    </div>
+                </li>
+            </ul>
+            <!--搜索-->
+            <div class="project_search_box">
+                <div class="search_input_box">
+                    <span class="dz_top"></span><span class="dz_bottom"></span>
+                    <input class="search_input" placeholder="请输入项目关键词" id="projectValue" type="text">
+                    <button class="search_button iconzhcc_yonghuming iconfont" onclick="select.projectLike($('#projectValue').val())"></button>
+                </div>
+                <div class="search_result_box" id="searchResultBox">
+                    <ul class="search_result_lists">
+                        <li onclick="select.projectLike('国科大')">
+                            国科大
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                        <li>
+                            塔山大道站人和小学，薛家湾小学开工建设。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

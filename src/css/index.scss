@@ -1,0 +1,472 @@
+body{
+  background:#111;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  .content_box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    #canvasMap{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+$base_color:#88ffe3;      //基础色
+
+@font-face
+{
+  font-family: FZY;
+  src:url('../iconfont/fzy.ttf') format('truetype')
+}
+
+
+.unit{
+  position: absolute;
+  width: 10%;
+  height: .42rem;
+  .describe_box{
+    background: url("../img/bgicon.png") no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    animation-duration:8s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    transform-origin: left bottom;
+    animation-name:a1;
+    position: relative;
+    .name,.num_unit{
+      font-size: .08rem;
+      color: #ddd;
+      text-align: center;
+      margin-left: 20%;
+      height: .19rem;
+      line-height: .19rem;
+      .number{
+        color:#dd9a27;
+        font-size: .12rem;
+        font-family: FZY;
+      }
+    }
+    .name{
+      line-height: .27rem;
+    }
+  }
+
+  .home_point{
+    position: absolute;
+    bottom: -17%;
+    left: -2%;
+    z-index: 9999;
+  }
+  .home_laebl{
+    position: absolute;
+    bottom: -23%;
+    left: -7%;
+  }
+
+  .wave_box{
+    position: absolute;
+    bottom: -70%;
+    left: -17%;
+  }
+}
+
+#unit1{
+  left: 9%;
+  top: 30%;
+  .describe_box{
+    animation-delay:1s;
+  }
+}
+#unit2{
+  left: 10%;
+  top: 60%;
+}
+#unit3{
+  left: 30%;
+  top: 20%;
+  pointer-events:auto;
+  /*width: 10%;
+  height: 15%;*/
+  .describe_box{
+    animation-delay:.5s;
+  }
+}
+#unit4{
+  left: 28%;
+  top: 50%;
+  .describe_box{
+    animation-delay:.5s;
+  }
+}
+#unit5{
+  right: 30%;
+  bottom: 25%;
+  .describe_box{
+    animation-delay:.7s;
+  }
+}
+#unit6{
+  right: 27%;
+  top: 20%;
+  .describe_box{
+    animation-delay:.7s;
+  }
+}
+#unit7{
+  right: 10%;
+  top: 40%;
+/*  height: 15%;*/
+  p.name{
+    line-height: .4rem;
+  }
+}
+#unit8{
+  right: 5%;
+  bottom: 20%;
+  .describe_box{
+    animation-delay:1s;
+  }
+
+}
+.short_bg{
+  width: 9%;
+  height: .38rem;
+  .describe_box {
+    .name, .num_unit {
+      height: .18rem;
+      line-height: .18rem;
+    }
+    .name {
+      line-height: .26rem;
+    }
+  }
+  .home_point{
+    position: absolute;
+    bottom: -18%;
+    left: -5%;
+    z-index: 9999;
+  }
+
+  .home_laebl{
+    position: absolute;
+    bottom: -24%;
+    left: -12%;
+  }
+  .wave_box{
+    position: absolute;
+    bottom: -75%;
+    left: -15%;
+  }
+}
+
+
+.center_box{
+  /*background: url("../img/yg_home_project.png") no-repeat;
+  background-size: 100% 100%;
+  */height: 64%;
+  width: 18%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-70%);
+  z-index: 98;
+  transition: all 1s linear;
+  .light_beam{
+    position: absolute;
+    top: 23%;
+    left: 17%;
+  }
+  .light_beam_bottom{
+    top: 62%;
+    left: -4%;
+    transform: rotateX(27deg);
+    position: absolute;
+  }
+  .line_box{
+    position: absolute;
+    width: 435px;
+    height: 100px;
+    top: 45%;
+    left: 13%;
+  }
+  .name,.num_unit{
+    color: #fff;
+    text-align: center;
+    height: .2rem;
+    line-height: .2rem;
+  }
+  .name{
+    font-size: .1rem;
+    margin-top: 35%;
+  }
+  .num_unit{
+    font-size: .1rem;
+    .number{
+      font-size: .14rem;
+      font-family: -webkit-pictograph;
+    }
+  }
+}
+.centerContainer{
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -57%);
+  transition:all 1s  linear;
+}
+
+/*
+
+@keyframes a1 {
+  0% {
+    transform:translateY(15px) rotateX(-80deg) scale(1);
+    opacity:0
+  }
+  7.5% {
+    transform:translateY(10px)  rotateX(-60deg)  scale(1);
+    opacity:.4
+  }
+  15% {
+    transform:translateY(5px) rotateX(-40deg)  scale(1);
+    opacity:.6
+  }
+  30% {
+    transform:translateY(-5px) rotateX(0deg)  scale(1);
+    opacity:1
+  }
+  100% {
+    transform:translateY(-5px) rotateX(0deg)  scale(1);
+    opacity:1
+  }
+}*/
+
+.BoxGeometry_box{
+  position: absolute;
+  bottom: -65%;
+  left: -20%;
+  z-index: 900;
+  animation-duration:4s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  animation-name:myfirst;
+  width: 100px;
+  height: 100px;
+}
+
+.circle_bg_box{
+  position: absolute;
+  width: 43%;
+  height: 100%;
+  left: -15%;
+  top: -12%;
+  div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    p{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .first_inner{
+      background: url("../img/iconnw.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .second_inner{
+      background: url("../img/iconone.png") no-repeat;
+      background-size: 100% 100%;
+      animation: clockwiseRotate 3s linear infinite;      // infinite就是无限滚动的意思
+    }
+    .third_inner{
+      background: url("../img/icontwo.png") no-repeat;
+      background-size: 100% 100%;
+      animation: anticlockwiseRotate 5s linear infinite;      // infinite就是无限滚动的意思
+    }
+    .fouth_inner{
+      background: url("../img/icontb.png") no-repeat;
+      background-size: 100% 100%;
+      animation: clockwiseRotate 7s linear infinite;      // infinite就是无限滚动的意思
+    }
+    .five_icon{
+      transform-style: preserve-3d;
+      transform-origin: center center;
+      animation: iconRotate 8s linear infinite;
+      i{
+        font-size: 30px;
+        position: absolute;
+        /*top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);*/
+        top: 35%;
+        left: 39%;
+        color: #19fabe;
+        /*animation: iconRotate 2s linear infinite;*/
+        &:nth-child(2){
+          transform: translateZ(1px);
+        }
+        &:nth-child(3){
+          transform: translateZ(2px);
+        }
+        &:nth-child(4){
+          transform: translateZ(3px);
+        }
+        &:nth-child(5){
+          transform: translateZ(4px);
+        }
+        &:nth-child(6){
+          transform: translateZ(5px);
+        }
+      }
+    }
+    .iconContainer{
+      width: 50%;
+      height: 50%;
+      left:50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
+
+/*顺时针转*/
+@keyframes  clockwiseRotate{
+   from{transform: rotate(0deg)}
+   to{transform: rotate(360deg)}
+ }
+
+
+/*逆时针转*/
+@keyframes  anticlockwiseRotate{
+  from{transform: rotate(0deg)}
+  to{transform: rotate(-360deg)}
+}
+
+/*小图标转*/
+@keyframes  iconRotate{
+   /* from{transform: rotateY(0deg)}
+  to{transform: rotateY(360deg)}*/
+  from{    transform: rotate3d(0,2,0,0deg);}
+  to{    transform: rotate3d(0,2,0,360deg);}
+}
+
+.pop_box_container{
+  width: 35%;
+  height: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:  scale(0);
+  z-index: 999;
+  pointer-events:auto;
+}
+.dz_big_dialog_box.pop_box_container{
+  width: 31.5%;
+  height: 70.5%;
+  .banner{
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.pop_out_animate{          //弹出
+  animation: popOutAn 1s linear;      // infinite就是无限滚动的意思
+  animation-fill-mode : forwards
+
+}
+
+.pop_in_animate{          //收回去
+  animation: popInAn 1s linear;      // infinite就是无限滚动的意思
+  animation-fill-mode : forwards
+}
+
+/*弹出框弹出*/
+@keyframes  popOutAn{
+  0%{
+    transform: scale(0) translate(-50%,-50%);
+    left: 10%;
+    top: 0%;
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1) translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+  }
+}
+/*弹出框弹出*/
+@keyframes  popInAn{
+  0%{
+    transform: scale(1) translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+  }
+  100%{
+    transform: scale(0) translate(-50%,-50%);
+    left: 10%;
+    top: 0%;
+    opacity: 0;
+  }
+}
+
+
+@media screen and (min-width: 3700px) and (max-width: 3900px) {
+  .center_box>.light_beam {
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    width: 65%;
+  }
+  .center_box>.light_beam_bottom {
+    top: 64%;
+    left: -3%;
+    transform: rotateX(27deg);
+    position: absolute;
+    width: 102%;
+  }
+}
+@media screen and (min-width: 3300px) and (max-width: 4000px) {
+  .center_box .line_box {
+    left: 20%;
+    top: 42%;
+  }
+  .center_box{
+    top: 60%;
+  }
+  .centerContainer{
+    top: 57%;
+  }
+  .center_box .name{
+    margin-top: 27%;
+  }
+}
+@media screen and (min-width: 3300px) and (max-width: 3800px) {
+  .center_box .line_box {
+    left: 20%;
+    top: 42%;
+  }
+  .center_box{
+    top: 60%;
+  }
+  .centerContainer{
+    top: 57%;
+  }
+  .center_box .name{
+    margin-top: 27%;
+  }
+}

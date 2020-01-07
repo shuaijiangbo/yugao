@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>进度管控中心</title>
+</head>
+<body>
+<div class="" id="projectManageCenter">
+    <!--//左侧部分-->
+    <div class="left_content_box">
+        <!--//投资管理-->
+        <div class="department_project_charts">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>投资管理</span>
+            </p>
+            <div class="chart_box chart_bar_box" style="width: 105%;" id="investBar"></div>
+        </div>
+
+        <!--//结算数据-->
+        <div class="peoject_invest_manage ">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>结算数据</span>
+            </p>
+            <div class="chart_box chart_bar_box" style="width: 110%;" id="settlementBar"></div>
+        </div>
+
+        <!--//合同管理-->
+        <div class="peoject_overview">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>合同管理</span>
+            </p>
+            <div class="chart_box chart_bar_box" id="">
+                <ul class="project_overview_items" id="projectOverviewItems">
+                    <li class="project_overview_item">
+                        <p class="text_describe">
+                            <span>渝中区</span>
+                            <span>1506万元</span>
+                        </p>
+                        <div class="progress_sum_bar">
+                            <p class="progress_bright_bar"></p>
+                        </div>
+                    </li>
+                    <li class="project_overview_item">
+                        <p class="text_describe">
+                            <span>大渡口区</span>
+                            <span>1088万元</span>
+                        </p>
+                        <div class="progress_sum_bar">
+                            <p class="progress_bright_bar"></p>
+                        </div>
+                    </li>
+                    <li class="project_overview_item">
+                        <p class="text_describe">
+                            <span>江北区</span>
+                            <span>1560</span>
+                        </p>
+                        <div class="progress_sum_bar">
+                            <p class="progress_bright_bar"></p>
+                        </div>
+                    </li>
+                    <li class="project_overview_item">
+                        <p class="text_describe">
+                            <span>沙坪坝区</span>
+                            <span>1060</span>
+                        </p>
+                        <div class="progress_sum_bar">
+                            <p class="progress_bright_bar"></p>
+                        </div>
+                    </li>
+                    <li class="project_overview_item">
+                        <p class="text_describe">
+                            <span>九龙坡区</span>
+                            <span>1500</span>
+                        </p>
+                        <div class="progress_sum_bar">
+                            <p class="progress_bright_bar"></p>
+                        </div>
+                    </li>
+                    <li class="project_overview_item">
+                        <p class="text_describe">
+                            <span>两江新区</span>
+                            <span>1260</span>
+                        </p>
+                        <div class="progress_sum_bar">
+                            <p class="progress_bright_bar"></p>
+                        </div>
+                    </li>
+                    <li class="project_overview_item">
+                        <p class="text_describe">
+                            <span>南岸区</span>
+                            <span>1360</span>
+                        </p>
+                        <div class="progress_sum_bar">
+                            <p class="progress_bright_bar"></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="tab_data_box">
+            <li class="tab_icon active">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    基础设施项目
+                </p>
+            </li>
+            <li class="tab_icon">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    社会事业项目
+                </p>
+            </li>
+            <li class="tab_icon">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    生态建设
+                </p>
+            </li>
+            <li class="tab_icon">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    公检司法
+                </p>
+            </li>
+            <li class="tab_icon">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    楼宇工程
+                </p>
+            </li>
+            <li class="tab_icon">
+                <div></div>
+                <i></i>
+                <p class="icon_name">
+                    公司自建
+                </p>
+            </li>
+        </ul>
+
+        <!--//招标管理-->
+        <div class="peoject_invest_manage ">
+            <p class="left_title">
+                <span class="title_icop"></span>
+                <span>招标管理</span>
+            </p>
+            <div class="chart_box chart_bar_box dz_tendering_box" id="" style="width: 110%;">
+                <div id="tenderingPieOne"></div>
+                <div id="tenderingPieTwo"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right_content_box">
+        <div class="statistics_box">
+            <ul class="statistics_lists">
+                <li class="statistics_list achieve_project">
+                    <div class="icon_box"></div>
+                    <img src="${require('../img/yg_project1.png')}" alt="">
+                    <span></span>
+                    <i></i>
+                    <div class="txt_box">
+                        <p class="engineering_name">完成工程</p>
+                        <p class="number">520个</p>
+                    </div>
+                </li>
+                <li class="statistics_list building_project">
+                    <div class="icon_box"></div>
+                    <img src="${require('../img/yg_build2.png')}" alt="">
+                    <span></span>
+                    <i></i>
+                    <div class="txt_box">
+                        <p class="engineering_name">在建</p>
+                        <p class="number">520个</p>
+                    </div>
+                </li>
+                <li class="statistics_list parksquare">
+                    <div class="icon_box"></div>
+                    <img src="${require('../img/yg_park2.png')}" alt="">
+                    <span></span>
+                    <i></i>
+                    <div class="txt_box">
+                        <p class="engineering_name">建设公园广场</p>
+                        <p class="number">520个</p>
+                    </div>
+                </li>
+                <li class="statistics_list overpass">
+                    <div class="icon_box"></div>
+                    <img src="${require('../img/yg_bridge2.png')}" alt="">
+                    <span></span>
+                    <i></i>
+                    <div class="txt_box">
+                        <p class="engineering_name">立交桥</p>
+                        <p class="number">520个</p>
+                    </div>
+                </li>
+            </ul>
+            <!--搜索-->
+            <div class="project_search_box">
+                <div class="search_input_box">
+                    <span class="dz_top"></span><span class="dz_bottom"></span>
+                    <input class="search_input" placeholder="请输入项目关键词" id="projectValue" type="text">
+                    <button class="search_button iconzhcc_yonghuming iconfont" onclick="select.projectLike($('#projectValue').val())"></button>
+                </div>
+                <div class="search_result_box" id="searchResultBox1">
+                    <ul class="search_result_lists">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

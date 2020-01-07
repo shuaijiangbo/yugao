@@ -1,0 +1,151 @@
+.pop_box{
+  width: 100%;
+  height: 100%;
+  background: url("../../img/propagandabg.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 10px;
+
+  &>div{
+    width: 100%;
+    height: 100%;
+  }
+  h1{
+    text-align: center;
+    color: #01fbfe;
+  }
+  .chinese{
+    font-size: 32px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .pop_content{
+    width: 80%;
+    margin: 0 auto;
+    height: 85%;
+    overflow: hidden;
+    position: relative;
+/*    display: flex;
+    justify-content: space-between;*/
+    .introduce_text_box{
+      width: 100%;
+      color: #01fbfe;
+      font-size: 16px;
+      line-height: 40px;
+      position: absolute;
+      /*display: flex;
+      flex-direction: column;
+      justify-content: space-around;*/
+      .project_list{
+        padding: 1% 0 1% 0;
+        display: flex;
+        height: .7rem;
+        position: relative;
+        transition: all 1s linear;
+        font-size: 18px;
+        div.text_box{
+          width: 60%;
+          p{
+            width: 100%;
+          }
+          .perject_name{
+            color:#daffff;
+          }
+          .perject_related{
+            width: 100%;
+            display: flex;
+            flex-wrap:wrap;
+            li{
+              width: 50%;
+              .txt_title{
+                color: #bbeced;
+              }
+              .txt_val{
+                color: #01fbfe;
+              }
+            }
+          }
+          .project_situation{
+            color: #01fbfe;
+            display: flex;
+            span{
+              width: 20%;
+            }
+            p{
+              line-height: .12rem;
+            }
+          }
+        }
+        div.pic_box{
+          width: 40%;
+          padding: 10px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .introduce_logo_box{
+      width: 40%;
+      iframe{
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+}
+
+
+#stateOwned>.pop_content{
+  padding-top: .08rem;
+  p{
+    text-indent: 2em;
+    font-size: 18px;
+    line-height: 30px;
+    color: #01fbfe;
+    margin-top: .1rem;
+  }
+}
+#popDevelopHistory>.pop_content{
+  padding-top: .08rem;
+  p{
+    text-indent: 2em;
+    font-size: 16px;
+    line-height: 30px;
+    color: #01fbfe;
+    margin-top: .05rem;
+  }
+}
+
+#popTotalInvest>.pop_content{
+  padding: 2% 0;
+ .department_lists{
+   display: flex;
+   flex-wrap: wrap;
+   align-content:space-around;
+   justify-content:space-between;
+   width: 100%;
+   height: 100%;
+   li{
+     width: 30%;
+     p{
+       height: 35px;
+       line-height: 35px;
+       &.department_title{
+         color: #daffff;
+         font-size: 22px;
+         margin-bottom: 10px;
+       }
+       span:nth-child(1){
+         color: #daffff;
+         font-size: 18px;
+       }
+       span:nth-child(2){
+         color: #01fbfe;
+         font-size: 18px;
+       }
+     }
+   }
+ }
+}

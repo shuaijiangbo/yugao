@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Concert+One);
+
+.d3_text {
+  animation:glow 20s ease-in-out infinite;
+}
+
+
+
+* { box-sizing:border-box; }
+
+body {
+  background:#0a0a0a;
+  overflow:hidden;
+}
+
+.figure_box {
+  animation:textRun 50s ease-in-out infinite;
+  transform-origin:center center;
+  transform-style:preserve-3d;
+}
+
+@keyframes textRun {
+  0%,100%{ transform:rotate3d(1,1,0,30deg); }
+  50%{ transform:rotate3d(-1,1,0,30deg); }
+ /* 50%{ transform:rotate3d(-1,-1,0,40deg); }
+  75%{ transform:rotate3d(1,-1,0,40deg); }*/
+}
+
+.d3_text {
+  display:block;
+  width:100%;
+  line-height:1.5;
+  font:100 .15rem 'Concert One', sans-serif!important;
+  text-transform:uppercase;
+  position:absolute;
+  color:#fff;
+}
+
+@keyframes glow {
+  0%,100%{ text-shadow:0 0 10px #0fcce2; }
+  50%{ text-shadow:0 0 10px orange; }
+/*  50%{ text-shadow:0 0 30px forestgreen; }
+  75%{ text-shadow:0 0 30px cyan; }*/
+}
+
+.d3_text:nth-child(2){ transform:translateZ(5px); }
+.d3_text:nth-child(3){ transform:translateZ(10px);}
+.d3_text:nth-child(4){ transform:translateZ(15px); }
+.d3_text:nth-child(5){ transform:translateZ(20px); }
+.d3_text:nth-child(6){ transform:translateZ(25px); }
+.d3_text:nth-child(7){ transform:translateZ(30px); }
+.d3_text:nth-child(8){ transform:translateZ(35px); }
+.d3_text:nth-child(9){ transform:translateZ(40px); }
+.d3_text:nth-child(10){ transform:translateZ(45px); }

@@ -1,0 +1,583 @@
+body{
+  background:#111;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  font-family:"Microsoft Yahei",微软雅黑;
+  .content_box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+$base_color:#19fabd;      //基础色
+@font-face
+{
+  font-family: SHUZI;
+  src:url('../iconfont/sz.ttf') format('truetype')
+}
+
+#corporateCultureCenter{
+  .left_content_box{        //左侧部分
+    width: 23.3%;
+    height: 82%;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    padding-left: 2.5%;
+    /*background: -webkit-linear-gradient(left, #1edf17, #1edf17, #3ceded, #5d83ff);*/
+    background: -webkit-linear-gradient(left, rgba(0,2,3,1), rgba(0,2,3,0.6));
+    z-index: 100;
+    .left_title{
+      color: #fff;
+      font-size: 16px;
+      padding: 5px 0;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      margin: .03rem 0;
+      .title_icop{
+        width: 2%;
+        height: 0.06rem;
+        background: url('../img/yg_business.png') no-repeat center;
+        background-size: 100% 100%;
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 1.5%;
+      }
+    }
+    .intro_text_box{
+      width: 100%;
+      color: $base_color;
+      text-indent: 2em;
+      line-height: .09rem;
+      font-size: .048rem;
+      padding: .03rem 0;
+      background: rgba(3,20,27,.2);
+      position: relative;
+
+      p{
+        width: 93.6%;
+        margin: 0 auto;
+      }
+    }
+
+    .business_box{
+      .business_table_box{
+        width: 100%;
+        padding: .03rem 0;
+        position: relative;
+        background: rgba(3,20,27,.6);
+        .li-items{
+          width: 92%;
+          color: #d8f6f4;
+          display: flex;
+          flex-wrap:wrap;
+          justify-content:space-between;
+          margin: 0 auto;
+          li{
+            text-align: center;
+            width: calc(49.8% - 4px);
+            background: rgba(131,245,220,.4);
+            margin-bottom: 5px;
+            padding: .03rem 0;
+            border: 2px dotted #0a4557;
+            border-radius: 5px;
+            p:first-child{
+              font-size: 0.054rem;
+              /* font-size: 19px;*/
+              /*margin-bottom: .02rem;*/
+              font-weight: bold;
+              letter-spacing: 2px;
+            }
+            p:last-child{
+              /* font-size: 0.03rem;*/
+              font-size: 12px;
+            }
+          }
+          li:first-child{
+            width: 100%;
+            display: none;
+          }
+        }
+      }
+    }
+    .news_box{
+      .news_pic_box{
+        width: 100%;
+        display: flex;
+        position: relative;
+        padding: 4px 0;
+        .show_pic{
+          width: 70%;
+          height: .72rem;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .pic_lists-box{
+          width: 30%;
+          height: .72rem;
+          .pic_lists{
+            height: .72rem;
+            li.pic_list{
+              height: .24rem;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .split_line{
+      display: inline-block;
+      height: 4px;
+      width: 100%;
+      background:rgba(3, 20, 27, 0.7);
+      position: absolute;
+      left: 0;
+      .line_light{
+        background: radial-gradient(#10d0e5 10%, rgba(136,255,227, 0) 67%);
+        position: absolute;
+        height: 100%;
+        width: 20%;
+        display: inline-block;
+        left: 0;
+        /*animation: moveLightLine 4s linear infinite ;*/
+      }
+    }
+    .split_line_top{
+      top: 0;
+      .line_light{
+        animation: moveLightLine 4s linear infinite ;
+      }
+    }
+    .split_line_bottom{
+      bottom: 0;
+      .line_light{
+        animation: moveLightLine 4s linear 2s infinite ;
+      }
+    }
+  }
+
+  .right_content_box{
+    width: 5%;
+    height: 82%;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    padding-right: 1.6%;
+    box-sizing: content-box;
+    background: -webkit-linear-gradient(right, #000203, rgba(0, 2, 3, 0.2));
+    z-index: 110;
+    .items_lis{
+      height: 100%;
+      padding: 97% 0;
+      box-sizing: border-box;
+      pointer-events: auto;
+      .item_li{
+        height: 23%;
+        position: relative;
+        pointer-events: auto;
+        overflow: hidden;
+        .item_text{
+          color: #53535b;
+          font-size: .06rem;
+          font-weight: bold;
+          vertical-align: 0.08rem;
+          position: relative;
+          padding: .035rem 25px .035rem 0;
+          text-align: right;
+          transition: all .6s linear;
+          .split_line{
+            display: inline-block;
+            height: 4px;
+            width: 100%;
+            background: radial-gradient(#10d0e5 10%, rgba(3, 20, 27, 0)60%);
+            position: absolute;
+            left: 87%;
+            transition: all .6s linear;
+          }
+          .split_line_top{
+            top: 0;
+          }
+          .split_line_bottom{
+            bottom: 0;
+          }
+        }
+        .item_text.active{
+          color: $base_color;
+          background: -webkit-linear-gradient(left,rgba(136,255,227,0),rgba(136,255,227,.1), rgba(136,255,227,.3),rgba(136,255,227,0));
+          .split_line{
+            left: 0;
+          }
+        }
+        .item_icon{
+          background: url("../img/yg_process.png");
+          width: 40%;
+          background-size: cover;
+          display: inline-block;
+          height: .2rem;
+        }
+      }
+    }
+  }
+}
+.center_content_box{
+  width: 71%;
+  height: 82%;
+  position: absolute;
+  left: 23%;
+  top: 10%;
+  .center_content_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &>div:not(:first-child){
+      display: none;
+    }
+    #developmentHistory{
+      width: 50%;
+      height: 80%;
+      position: absolute;
+      right: 2%;
+      top: 15%;
+     /* overflow: hidden;*/
+      .single_base_box{
+        width: 68%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateX(147%);
+        .memorial_day_box{
+          background:url("../img/yg_culture_course.png");
+          width: 35%;
+          height: .21rem;
+          background-size: 100% 100%;
+          text-align: center;
+          line-height: .21rem;
+          color: #fff;
+          font-size:22px;
+          /*font-weight: bold;*/
+        }
+        .memorial_event_box{
+          width: 63%;
+          height: .2rem;
+          font-size: 18px;
+          text-align: left;
+          p{
+            height: .1rem;
+            line-height: .1rem;
+            color: #dbe9fe;
+          }
+        }
+        &:nth-child(1){
+          margin-left: 38%;
+        }
+        &:nth-child(3){
+          margin-left: 27%;
+          animation-delay:1s ;
+        }
+        &:nth-child(5){
+          margin-left: 14%;
+          animation-delay:2s ;
+        }
+        &:nth-child(7){
+          margin-left: 0%;
+          animation-delay:3s ;
+        }
+      }
+      .moveIn{
+        animation-duration:2s;
+        animation-timing-function:linear;
+        animation-name:moveIn;
+        animation-fill-mode : forwards
+      }
+      .showIn{
+        animation-duration:1.5s;
+        animation-timing-function:linear;
+        animation-name:showIn;
+        animation-fill-mode : forwards;
+        img{
+          animation:jump 10s linear infinite;
+        }
+      }
+      .down_arrows_box{
+        width: 68%;
+        text-align: center;
+        opacity: 0;
+        position: relative;
+        &:nth-child(2){
+          left: 10%;
+          animation-delay:3s ;
+          img{
+            animation-delay:5s ;
+          }
+        }
+        &:nth-child(4){
+          left: -3%;
+          animation-delay:4s ;
+          img{
+            animation-delay:8s ;
+          }
+        }
+        &:nth-child(6){
+          left: -16%;
+          animation-delay:5s ;
+          img{
+            animation-delay:11s ;
+          }
+        }
+      }
+    }
+
+    #excellentProject{
+      width: 100%;
+      height: 80%;
+      position: absolute;
+      right: 0;
+      top: 15%;
+      overflow: hidden;
+      .excellent_project_lists{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .excellent_project_list{
+          position:absolute ;
+          width: 15%;
+          height: .8rem;
+          background: url("../img/yg_culture_project.png") no-repeat;
+          background-size: 100% 100%;
+          overflow: hidden;
+          padding: 35px 17px;
+          border-top-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          animation:fangdasuoxiao 10s linear infinite;
+
+          .radius_box{
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 80px;
+            border-bottom-right-radius: 60px;
+            overflow: hidden;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+            .excellent_project_name{
+              font-size: 20px;
+              background: rgba(0,0,0,.5);
+              position: relative;
+              bottom: 40px;
+              text-align: center;
+              width: 100%;
+              height: 40px;
+              line-height: 40px;
+              color: #fff;
+            }
+          }
+
+          &:nth-child(1){
+            left: 10%;
+            bottom: 10%;
+            animation-delay:0s ;
+          }
+          &:nth-child(2){
+            left: 40%;
+            top: 10%;
+            animation-delay:2s ;
+          }
+          &:nth-child(3){
+            left: 60%;
+            bottom: 10%;
+            animation-delay:4s ;
+          }
+          &:nth-child(4){
+            left: 80%;
+            top: 15%;
+            animation-delay:6s ;
+          }
+        }
+      }
+    }
+
+    .enterprise_mark_box{
+      width: 100%;
+      height: 80%;
+      position: absolute;
+      right: 0;
+      top: 15%;
+      /*overflow: hidden;*/
+      .enterprise_mark_lists{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .enterprise_mark_list{
+          position: absolute;
+          width: 12%;
+          height: 1rem;
+          background:url("../img/yg_culture_Imprint.png") no-repeat;
+          background-size: 100% 100%;
+          animation: fangdasuoxiao 10s linear infinite;
+          p{
+            color: #b0f0fc;
+            font-size: 23px;
+           /* font-weight: bold;*/
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            &:nth-child(1){
+              margin-top: 55%;
+            }
+            i{
+              color: #e6b10b;
+              font-size: 24px;
+              font-family: SHUZI;
+            }
+          }
+          &:nth-child(1){
+            left: 10%;
+            top: -10%;
+            animation-delay:0s ;
+          }
+          &:nth-child(2){
+            left: 30%;
+            top: -20%;
+            animation-delay:2s ;
+          }
+          &:nth-child(3){
+            left: 55%;
+            top: 10%;
+            animation-delay:4s ;
+          }
+          &:nth-child(4){
+            left: 80%;
+            top: -5%;
+            animation-delay:6s ;
+          }
+          &:nth-child(5){
+            left: 6%;
+            bottom: -4%;
+            animation-delay:8s ;
+          }
+          &:nth-child(6){
+            left: 40%;
+            bottom: 10%;
+            animation-delay:10s ;
+          }
+          &:nth-child(7){
+            left: 80%;
+            bottom: -5%;
+            animation-delay:12s ;
+            width: 10%;
+            height: .7rem;
+            p:nth-child(1){
+              margin-top: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .yugao_honor_box{
+    width: 76%;
+    >.img_div{
+      margin-top:5.5%;
+    }
+    .dz_chassis_box{
+      position: absolute;
+      top: 17%;
+      left: 24.8%;
+      img{
+        position: relative;
+        z-index: 10;
+      }
+      .dz_chassis1{
+        background: url("../img/chassiscircle.png") no-repeat;
+        background-size: 100% 100%;
+        width: 79%;
+        height: 20%;
+        position: absolute;
+        bottom: -9%;
+        left: 10.5%;
+        animation: ani_bottom 3s linear alternate infinite;
+      }
+    }
+  }
+}
+
+
+@keyframes moveIn {
+  0% {
+    transform: translateX(147%);
+    opacity:0
+  }
+  100% {
+    transform: translateX(0%);
+    opacity:1
+  }
+}
+/*箭头跳一跳*/
+@keyframes jump {
+  0%,10%,20%,100% {
+    transform: translateY(0);
+  }
+  5%,15%{
+    transform: translateY(10px);
+  }
+}
+
+/*箭头出现*/
+@keyframes showIn {
+  0% {
+    opacity:0;
+    transform: scale(0.1);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+@keyframes moveLightLine {
+  0%,100% {
+    left:0
+  }
+  50%{
+    left:85%
+  }
+}
+
+/*放大缩小*/
+@keyframes fangdasuoxiao {
+  0%,20%,100% {
+    transform: scale(1);
+  }
+  10%{
+    transform: scale(.9);
+  }
+}
+@media screen and (min-width: 3300px) and (max-width: 4000px){
+  .center_content_box .yugao_honor_box > .img_div {
+    margin-top: 6.5%;
+  }
+  .center_content_box .yugao_honor_box .dz_chassis_box{
+    left: 26.9%;
+  }
+}
+@media screen and (min-width: 3300px) and (max-width: 3800px){
+  .center_content_box .yugao_honor_box > .img_div {
+    margin-top: 6.5%;
+  }
+ /* .center_content_box .yugao_honor_box .dz_chassis_box{
+    left: 38.8%;
+  }*/
+}

@@ -1,0 +1,101 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.msg-info {
+	position: absolute;
+	width: 300px;
+	text-align:center;
+	background-color: transparent;
+	z-index: 100;
+	margin-left:-100px;
+	padding: 10px;
+}
+
+.text {
+	color: #26FFFF;
+	line-height: 30px;
+}
+.cesium-viewer-bottom{
+	display: none;
+}
+
+#right-div,#bottom-div{
+	text-align: center;
+	pointer-events: none;
+}
+
+#right-ul{
+	margin: 0 auto;
+	width: 80%;
+}
+
+#right-ul li{
+	margin: 30px 0px;
+	border: 1px solid #ddd;
+	padding: 15px; 
+	color: #fff;
+	pointer-events:auto;
+}
+
+#bottom-ul{
+	margin: 0 auto;
+	width: 1400px;
+}
+
+#bottom-ul li{
+	float: left;
+	margin: 30px 10px;
+	width:150px;
+	border: 1px solid #ddd;
+	padding: 15px 30px; 
+	color: #fff;
+	pointer-events:auto;
+}
+
+.marks{
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	height: auto;
+	width: auto;
+}
+
+.updown{
+	animation: xuanzhuanm 5s linear infinite ;
+}
+.upAnddown{
+	font-family: '����';
+	animation: upAnddown 3s linear infinite ;
+}
+
+
+@keyframes upAnddown {
+25% {transform: translateY(-10px);}
+50%, 100% {transform: translateY(0);}
+75% {transform: translateY(10px);}
+}
+
+@keyframes xuanzhuanm {
+	0%{
+		transform:rotateY(0deg);
+	}
+	25% { 
+		transform:rotateY(25deg);
+	}
+	50%{
+		transform:rotateY(50deg);
+	}
+	75%{
+		transform:rotateY(25deg);
+	}
+	100%{
+		transform:rotateY(0deg);
+	}
+}
+
+#marks-all p{
+	font-family: '新宋体';
+}
+

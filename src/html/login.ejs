@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script src="https://cdn.bootcss.com/three.js/r76/three.min.js"></script>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="particles-js" class="canvas-box"></div>
+        <div class="header_top" id="headerTop">
+            <img src="${require('../img/title.png')}" alt="">
+        </div>
+        <div class="left_bg_box"></div>
+        <div class="center_box_box" id="canvasBox">
+        </div>
+        <img style="z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15%;
+    transform: translate(-50%,-50%);" src="${require('../img/logomap.png')}" alt="">
+        <!--<div class="right_bg_box"></div>-->
+        <!--<div class="form_box">
+            <form action="">
+                <div class="form-input">
+                    <i class="iconzhcc_yonghuming iconfont"></i>
+                    <input type="text" placeholder="用户名">
+                </div>
+                <div class="form-input">
+                    <i class="iconmima54 iconfont"></i>
+                    <input type="password" placeholder="请输入密码">
+                </div>
+                <div class="form-submit">
+                    <button>登录</button>
+                </div>
+            </form>
+        </div>-->
+
+</body>
+<script type="text/javascript" src="static/map/config.js"></script>
+<script type="text/javascript" src="static/map/sockjs.min.js"></script>
+<script type="text/javascript" src="static/map/stomp.js"></script>
+<script type="text/javascript" src="static/map/websocket.js"></script>
+<script type="text/javascript">
+	var superMap={
+		"websocketConnectionSuccess":function(websocket){
+			websocket.subscribe(CONFIG_SUBSCRIBE_TOPIC, function(msg) {
+				var data=JSON.parse(msg.body);
+				if(data.command=="login"){
+					window.location.href="/newIndex.html?topic="+topic;
+				}
+			});
+		}
+	};
+</script>
+</html>
