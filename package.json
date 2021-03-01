@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "echarts": "^4.2.1",
-    "three": "^0.106.2",
+    "three": "^0.125.0",
     "velocity-animate": "^1.5.2"
   }
 }
